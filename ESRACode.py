@@ -81,13 +81,13 @@ def data_collect():
        
          # Loop used to locate indices of burn start and end                                                                 
          for u in list(range(pIndex[i], 0, -1)):   
-             # If pressure is less than 15 Psi, mark the index and break. Index Start.                                  
-             if data[u,y+1] < 15:                                                 
+             # If pressure is less than 14.7 Psi, mark the index and break. Index Start.                                  
+             if data[u,y+1] < 14.7:                                                 
                  indexIS[i] = u                                                     
                  break
          for u in list(range(pIndex[i], len(data))):
-             # If pressure is less than 15 Psi, mark the index and break. Index End.                                 
-             if data[u, y+1] < 15:                                                 
+             # If pressure is less than 14.7 Psi, mark the index and break. Index End.                                 
+             if data[u, y+1] < 14.7:                                                 
                  indexIE[i] = u                                             
                  break
          burnTime[i] = data[indexIE[i], y] - data[indexIS[i], y]
