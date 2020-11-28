@@ -4,3 +4,4 @@ This project was used during my senior year of college to help calculate key per
 * CSV file contains three columns in the following order: time, pressure, load
 * CSV file must be titled with format "~X.XXXXX\~X.XXXXX\~X.XXXXX.csv" where each corresponding value represents: "Nozzle throat diameter [in.] ~ Nozzle exit diameter [in.] ~ mass of propellant [lbs.]".
 * Theoretical specific heat ratio, combustion temperature, and molecular weight are specific to LS propellant. 
+* Calibration slopes and intercepts
